@@ -106,8 +106,6 @@ SSH into the control node and follow the steps below:
 The playbooks are copied in the;  /etc/ansible/
 Updates the /etc/ansible/hosts file to run the playbook on a specific machine
 How do I specify which machine to install the ELK server on versus which to install Filebeat on?
-Used /etc/ansible/hosts to specify which machine to install ELK server vs Filebeat and Metricbeat
-Used http://PublicIP(ELK-SERVER):5601/app/kibana to check if the ELK server is running
-
-
+Use /etc/ansible/hosts to specify which machine to install ELK server vs Filebeat and Metricbeat
+Use http://PublicIP(ELK-SERVER):5601/app/kibana to check if the ELK server is running
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._1
