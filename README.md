@@ -55,7 +55,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the jump-box-provision machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - Access to this machine is only allowed from the IP address: (home network IP)_
 
-Machines within the network can only be accessed by _each other. The Web-1, Web-2 and DVMA-VM2, VMs send traffic to the ELK-SERVER._.
+Machines within the network can only be accessed by _each other. The Web-1, Web-2 and DVMA-VM2, VMs send traffic to the ELK-SERVER.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -110,4 +110,14 @@ _Where to update Ansible to run playbook:_
 - Use /etc/ansible/hosts to specify which machine to install ELK server vs Filebeat and Metricbeat
 - Use http://PublicIP(ELK-SERVER):5601/app/kibana to check if the ELK server is running
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._1
+## _specific commands to run to download the playbook, update the files, etc._
+- ssh sysadmin@<Jump-Box-Provison_PublicIP>
+- sudo docker container list -a  (Locate the ansible container)
+- sudo docker start wonderful_mirzakhani
+- sudo docker attach wonderful_mirzakhani
+- cd /etc/ansible
+- ansible-playbook elk-playbook.yml (Installs and Configures ELK-Server)
+- cd /etc/ansible/
+- ansible-playbook beats-playbook.yml (Installs and Configures Beats)
+- Opened a new browser on Personal Workstation, navigated to (http://PublicIP(ELK-SERVER):5601/app/kibana) - to bring up Kibana Web Portal
+
