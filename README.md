@@ -52,8 +52,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the jump-box-provision machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - Access to this machine is only allowed from the IP address: (home network IP)_
 
-Machines within the network can only be accessed by _each other. The Web-1, Web-2 and DVMA-VM2, VMs send traffic to the ELK-SERVER.__.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by _each other. The Web-1, Web-2 and DVMA-VM2, VMs send traffic to the ELK-SERVER._.
 
 A summary of the access policies in place can be found in the table below.
 
