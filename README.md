@@ -103,6 +103,7 @@ SSH into the control node and follow the steps below:
 - Update the configuration files to include the Private IP (10.2.004) of the ELK-Server to the ElasticSearch and Kibana Sections of the Configuration File
 - Run the playbook, and navigate to http://PublicIP(ELK-SERVER):5601/app/kibana to check that the installation worked as expected.
 
+_Where to update Ansible to run playbook_
 - The playbooks are copied in the;  /etc/ansible/
 - Updates the /etc/ansible/hosts file to run the playbook on a specific machine
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on?
