@@ -16,8 +16,11 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 roles/main.yml
 
-  - _TODO: Enter the playbook file._
-
+  _The playbook files are:_
+- my-playbook.yml - for installing DVWA servers
+- elk-playbook.yml - for installing ELK-SERVER
+- filebeat-playbook.yml - for installing and configuring Filebeat on ELK-SERVER and Web-1, Web-2 and DVWA servers
+- metricbeat-playbook.yml - For installing and configuring Metricbeat on ELK-SERVER and Web-1, Web-2 and DVWA servers
 ### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA (D*mn Vulnerable Web Application). This is to help better understand the processes of securing web applications.
