@@ -53,7 +53,7 @@ Availability Zone 2: ELK-SERVER
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the jump-box-provision machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- Access to this machine is only allowed from the IP address: (home network IP)_
+- Access to this machine is only allowed from the IP address: (home network IP)
 
 Machines within the network can only be accessed by _each other. The Web-1, Web-2 and DVMA-VM2, VMs send traffic to the ELK-SERVER.
 
@@ -61,7 +61,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name               | Publicly Accessible | Allowed IP Addresses |
 |--------------------|---------------------|----------------------|
-| Jump-Box-Provision | Yes                 | <homeIP Address>     |
+| Jump-Box-Provision | Yes                 | (homeIP Address)     |
 | Web-1              | No                  | 10.0.0.1-254         |     
 | Web-2              | No                  | 10.0.0.1-254         |
 | ELK-SERVER         | No                  | 10.0.0.1-254         |
