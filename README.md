@@ -1,7 +1,7 @@
 ## Automated ELK Stack Deployment
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
