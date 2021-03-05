@@ -24,7 +24,6 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be reliable and highly available, in addition to restricting inbound access to the network. The load balancer ensures that it distributes incoming traffic to the network by efficiently distributing across multiple servers. It gives control access to only authorized users to connect. It helps in scaling up and down servers based on demands on the servers.
 
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 Load Balancers defend against distributed denial-of-service (DDoS) attacks and the advantage of the jump box is to control a safer access to the servers 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _logs_ and system _metrics_.
@@ -32,7 +31,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - _TODO: What does Metricbeat record?_
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name                | Function              | IP Address | Operating System |
 |-------------------- |-----------------------|------------|------------------|
@@ -61,20 +59,23 @@ A summary of the access policies in place can be found in the table below.
 
 | Name               | Publicly Accessible | Allowed IP Addresses |
 |--------------------|---------------------|----------------------|
-| Jump-Box-Provision | Yes/No              | 10.0.0.1 10.0.0.2    |
-| Web-1              | No                  | 10.0.0.1-254         |     |
+| Jump-Box-Provision | Yes                 | <homeIP Address>     |
+| Web-1              | No                  | 10.0.0.1-254         |     
 | Web-2              | No                  | 10.0.0.1-254         |
 | ELK-SERVER         | No                  | 10.0.0.1-254         |
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK-SERVER machine. No configuration was performed manually, which is advantageous because it increases accuracy, and saves time by eliminating human error in reissuing commands.
+
+The main advantage of automating the installation process is to deploy multiple servers easily and quickly without having to physically setup each server
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Install Docker.oi
+- Install pip3
+- Install Docker python module
+- Increase virtual machine memory
+- Download and Launch docker elk container
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
