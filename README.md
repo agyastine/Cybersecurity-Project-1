@@ -12,7 +12,9 @@ The files in this repository were used to configure the network depicted below.
 
 ![TODO: Update the path with the name of your diagram](Diagram/Project%20Topology.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the main.yml file may be used to install only certain pieces of it, such as Filebeat.
+
+roles/main.yml
 
   - _TODO: Enter the playbook file._
 
@@ -25,7 +27,7 @@ Load balancing ensures that the application will be reliable and highly availabl
 - _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 Load Balancers defend against distributed denial-of-service (DDoS) attacks and the advantage of the jump box is to control a safer access to the servers 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _logs_ and system _metrics_.
 - _TODO: What does Filebeat watch for?_
 - _TODO: What does Metricbeat record?_
 
