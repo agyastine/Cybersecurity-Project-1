@@ -30,8 +30,8 @@ Load balancing ensures that the application will be reliable and highly availabl
 Load Balancers defend against distributed denial-of-service (DDoS) attacks and the advantage of the jump box is to control a safer access to the servers 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _logs_ and system _metrics_.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- _Filebeat watches for log files and collects log events that is Lightweight Log Analysis and Elasticsearch._
+- _Metricbeat records the metrics from services running on the server and from the operating system regularly._
 
 The configuration details of each machine may be found below.
 
@@ -103,7 +103,7 @@ SSH into the control node and follow the steps below:
 - Update the configuration files to include the Private IP (10.2.004) of the ELK-Server to the ElasticSearch and Kibana Sections of the Configuration File
 - Run the playbook, and navigate to http://PublicIP(ELK-SERVER):5601/app/kibana to check that the installation worked as expected.
 
-_Where to update Ansible to run playbook_
+_Where to update Ansible to run playbook:_
 - The playbooks are copied in the;  /etc/ansible/
 - Updates the /etc/ansible/hosts file to run the playbook on a specific machine
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on?
